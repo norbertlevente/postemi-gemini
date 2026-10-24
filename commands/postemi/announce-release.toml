@@ -1,0 +1,12 @@
+description = "Draft social posts about the latest release from the changelog, then schedule them with Postemi after you approve the previews."
+prompt = """
+Announce the latest release of this project on social media with Postemi.
+
+1. Find what shipped: read CHANGELOG.md (or the latest release notes) and, if needed, git log since the previous tag. Pick the two or three changes a user of the product would care about; leave out internal refactors.
+2. Call list_integrations and ask which channels to use if the request below does not say.
+3. Write one post per platform in the product's voice: a short hook, what changed, why it matters, and a link to the release page where links are allowed (not on X). Respect each channel's limit from get_integration_schema.
+4. Call get_workspace_context, then preview_post for the planned time, and show every preview.
+5. Call create_post only after I approve, with an idempotencyKey.
+
+Extra instructions: {{args}}
+"""

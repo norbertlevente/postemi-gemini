@@ -1,0 +1,11 @@
+{
+  "name": "postemi",
+  "version": "1.0.0",
+  "description": "Write, schedule and publish social media posts with Postemi: Facebook, Instagram, X, LinkedIn, TikTok, YouTube, Threads, Bluesky, Telegram, Discord, Slack and Pinterest (beta). Preview every post per account, announce releases from your changelog, and manage your content calendar.",
+  "mcpServers": {
+    "postemi": {
+      "httpUrl": "https://mcp.postemi.com/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

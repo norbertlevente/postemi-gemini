@@ -1,0 +1,6 @@
+description = "Write and schedule one social media post with Postemi, with a preview per account before anything is saved."
+prompt = """
+Schedule this social media post with Postemi: {{args}}
+
+Ask for the message, the channels or the time if any is missing. Call get_workspace_context and convert my local time to UTC, call list_integrations and get_integration_schema for each channel, write the post per platform, call preview_post and show the account, @handle, local time, character count and any problem. Call create_post only after I confirm, with a new idempotencyKey.
+"""
